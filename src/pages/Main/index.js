@@ -1,9 +1,14 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Title } from './styles';
 
 function Main() {
-  return <h1>Hello world!!!!</h1>;
+  return (
+    <>
+      <Title>Main</Title>
+      <small>Menor</small>
+    </>
+  );
 }
 
 export default Main;
