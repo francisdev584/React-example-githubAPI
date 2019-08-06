@@ -5,8 +5,7 @@ import { Title } from './styles';
 function Main() {
   return (
     <>
-      <Title>Main</Title>
-      <small>Menor</small>
+      <Title>HELLO WORLD!!!</Title>
     </>
   );
 }
