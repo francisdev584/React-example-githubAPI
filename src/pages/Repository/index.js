@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import api from '../../services/api';
 
@@ -9,6 +10,14 @@ export default class Repository extends Component {
     repository: {},
     issues: [],
     loading: true,
+  };
+
+  static propTypes = {
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        repository: PropTypes.string,
+      }),
+    }).isRequired,
   };
 
   async componentDidMount() {
