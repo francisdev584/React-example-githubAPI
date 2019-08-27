@@ -8,18 +8,18 @@ import Container from '../../components/Container';
 import { Loading, Owner, IssueList } from './styles';
 
 export default class Repository extends Component {
-  state = {
-    repository: {},
-    issues: [],
-    loading: true,
-  };
-
   static propTypes = {
     match: PropTypes.shape({
       params: PropTypes.shape({
         repository: PropTypes.string,
       }),
     }).isRequired,
+  };
+
+  state = {
+    repository: {},
+    issues: [],
+    loading: true,
   };
 
   async componentDidMount() {
