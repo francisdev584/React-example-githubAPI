@@ -56,12 +56,8 @@ export default class Main extends Component {
         error: false,
       });
     } catch (error) {
-      console.log(error);
-
       this.setState({
         error: true,
-        newRepo: '',
-        loading: false,
       });
     } finally {
       this.setState({
@@ -75,7 +71,8 @@ export default class Main extends Component {
     return (
       <Container>
         <h1>
-          <FaGithubAlt /> Repositories
+          <FaGithubAlt />
+          Repositórios
         </h1>
         <Form onSubmit={this.handleSubmit} error={error}>
           <input
