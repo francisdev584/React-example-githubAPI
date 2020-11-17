@@ -40,5 +40,8 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2"
+  },
+  "resolutions": {
+    "logkitty":"^0.7.1"
   }
 }
